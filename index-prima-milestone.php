@@ -1,6 +1,6 @@
 <?php
 
-    require_once __DIR__ . '/backend/database.php';
+    require_once __DIR__ . '/database/database.php';
 
 ?>
 
