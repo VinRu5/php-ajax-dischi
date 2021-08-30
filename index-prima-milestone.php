@@ -20,17 +20,6 @@
             <img src="./img/spotify-logo.png" alt="logo Spotify">
         </div>
 
-        <div class="select-container">
-            <label for="genre">Scegli la tua musica</label>
-            <!-- <select v-model="selectGenre" @change="$emit('choice', selectGenre)" id="genre">
-                <option v-for="genre in optionGenre" :key="genre.id" 
-                    :value="genre.value">
-                    {{ genre.text }}
-                </option>
-            </select> -->
-
-            <input type="text">
-        </div>
     </header>
     <main>
         <div class="container">
@@ -58,13 +47,6 @@
             </div>
         </div>
     </main>
-
-    <?php
-
-        foreach ($albums as $album) {
-            echo $album['title'];
-        }
-    ?>
     
 </body>
 </html>
