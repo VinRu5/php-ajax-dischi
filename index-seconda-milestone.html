@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -35,17 +35,16 @@
                 <div class="row-me">
 
                     <div v-for="album in albums" class="album-container">
-                            {{ album.title }}
-                        <!-- <div class="album-inner">
+                        <div class="album-inner">
                             <div class="img-container">
                                 <img :src="album.poster" :alt="`${album.title} di ${album.author}`">
                             </div>
-                            <h3 class="title-album">{{ upperTitle }}</h3>
+                            <h3 class="title-album">{{ album.title.toUpperCase() }}</h3>
                             <div class="info-album">
                                 <div class="artist">{{ album.author }}</div>
-                                <div class="yaer">{{ album.year }}</div>
+                                <div class="year">{{ album.year }}</div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
 
                 </div>

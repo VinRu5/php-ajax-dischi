@@ -10,14 +10,12 @@ new Vue(
         created() {
             axios.get('http://localhost:8888/php-ajax-dischi/backend/api.php')
             .then((res) => {
-                albums = res.data;
-                console.log(albums);
+                this.albums = res.data;
+                console.log(this.albums);
             })
         },
         computed: {
-            upperTitle: function () {
-                return this.title.toUpperCase();
-            }
+           
         }
     }
 );
