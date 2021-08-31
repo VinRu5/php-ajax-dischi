@@ -20,11 +20,12 @@
         
             <div class="select-container">
                 <label for="genre">Scegli la tua musica</label>
-                <!-- <select v-model="selectGenre" @change="$emit('choice', selectGenre)" id="genre">
-                    <option v-for="genre in optionGenre" :key="genre.id" :value="genre.value">
+                <select v-model="selectGenre" @change="choiceGenre()" id="genre">
+                    <option v-for="genre in genres" :value="genre.value">
                         {{ genre.text }}
                     </option>
-                </select> -->
+                </select>
+                <!-- <button @click="choiceGenre()">Go!</button> -->
         
                 <!-- <input v-model="inputSearch" @keyup.enter="$emit('search', inputSearch)" type="text"> -->
             </div>
@@ -48,7 +49,7 @@
                     </div>
 
                 </div>
-                <!-- <div v-if="albums.length === 0" class="text-searched">La ricerca non ha prodotto risultati</div> -->
+                <div v-if="albums.length === 0" class="text-searched">La ricerca non ha prodotto risultati</div>
             </div>
         </main>
 

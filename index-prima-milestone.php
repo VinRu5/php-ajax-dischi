@@ -33,7 +33,7 @@
                         <div class="img-container">
                             <img src="<?php echo $album['poster'] ?>" alt="<?php echo $album['title'] . 'di' . $album['author']?>">
                         </div>
-                        <h3 class="title-album"><?php echo $album['title'] ?></h3>
+                        <h3 class="title-album"><?php echo strtoupper($album['title']) ?></h3>
                         <div class="info-album">
                             <div class="artist"><?php echo $album['author'] ?></div>
                             <div class="year"><?php echo $album['year'] ?></div>
